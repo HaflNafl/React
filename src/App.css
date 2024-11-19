@@ -1,22 +1,176 @@
-.body {
-    width: 1200px;
-    margin: auto;
-    font-family: "Open Sans", sans-serif;
+html {
+    box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 .header {
     display: flex; 
     align-items: center; 
     padding: 20px;
-    justify-content: center; 
+    justify-content: space-between;
     gap: 20px; 
 }
 .header p {
     font-weight: bold; 
 }
+
+.container-foto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+    width: 1400px;
+    margin: 0 auto;
+    height: 367px;
+    padding: 150px 0;
+}
+
+.about-image {
+    width: 800px;
+    height: 700px;
+}
+
+.about-icon {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.about-item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.about-item-title {
+    font-size: 25px;
+    color: #274C5B;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+}
+
+.about-item-text {
+    font-size: 18px;
+    color: #525C60;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+}
+
+.about-title {
+    font-size: 30px;
+    color: #7EB693;
+    font-family: "Yellowtail", cursive;
+    font-weight: 300;
+}
+
+.about-text {
+    font-size: 50px;
+    color:#274C5B;
+    font-family: "Roboto", sans-serif;
+    font-weight:800;
+}
+
+.about-simple {
+    font-size: 18px;
+    color: #525C60;
+    font-family: "Open Sans", sans-serif;
+}
+
+.item {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.foto-texts {
+    margin-left: 50px;
+}
+
+.foto-title {
+    font-family: "Yellowtail", sans-serif;
+    font-size: 36px;
+}
+
+.title1 {
+    color: white;
+}
+
+.title2 {
+    color: #7EB693;
+}
+
+.foto-text {
+    font-family: "Roboto", sans-serif;
+    font-size:40px
+}
+
+.text1 {
+    color:white;
+}
+
+.foto {
+    background-image: url('../src//image//Image.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto2 {
+    background-image: url('../src//image//Image (1).svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-cont {
+    display: flex;
+    gap:8px;
+    align-items: center;
+}
+
 .tab {
     display: flex;
     justify-content: space-between; 
     gap: 30px;
+}
+
+.about-main-cont {
+    background-color: #F9F8F8;
+}
+
+.about-cont {
+    display: flex;
+    padding: 100px 0;
+}
+
+.button-about {
+    width: 220px;
+    height: 79px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #274C5B;
+    border-radius: 16px;
+    margin-top: 40px;
+    border: none;
+}
+
+.icon-about {
+    width: 100px;
+    height: 100px;
 }
 
 .tab li {
@@ -27,6 +181,16 @@
 .tab li a {
     text-decoration: none;
     color: #000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color:#274C5B;
+}
+
+.header-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #274C5B;
+    font-size: 38px;
 }
 
 .block_input {
@@ -36,9 +200,405 @@
     align-items: center;
     gap: 20px;
 }
+
+.image-header {
+    width:56px;
+    height: 56px;
+}
+
 .cart {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 12px;
+    border: #E0E0E0 1px solid;
+    border-radius: 33px;
+    padding: 5px 16px 5px 5px;
+}
+
+.cart-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+.back {
+  display: flex;
+  width: 10px;
+  height: 100px;
+}
+
+.button-body {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 15px 35px;
+    background-color: #EFD372;
+    border-radius: 16px;
+    margin-top: 23px;
+    border: none;
+}
+
+.offer-cont {
+    background-color: #274C5B;
+    padding: 200px 0;
+}
+
+.offer-title {
+    color:#7EB693;
+    font-family: "Yellowtail", cursive;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.offer-info-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.offer-info-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    color:white;
+    font-weight:800;
+}
+
+.button-offer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 79px;
+    background-color: #EFD372;
+    border-radius: 16px;
+    border: none;
+    margin-bottom: 40px;
+}
+
+.explore-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color:#274C5B;
+}
+
+.products_container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+}
+
+.product_card {
+    height: 483px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #F9F8F8;
+    border-radius: 30px;
+    text-align: left;
+}
+
+.product-type {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    padding: 5px 16px;
+    background-color: #274C5B;
+    border-radius: 8px;
+    color: white;
+    width: fit-content;
+}
+
+.conteiner-body {
+    background-image: urL("../src//image//Background\ \(1\).png");
+    background-color: #274C5B;
+    width: 100%;
+    height: 898px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.text-body-cont {
+    margin-left: 260px;
+}
+
+.text-body-title {
+    font-family: "Yellowtail", cursive;
+    font-size: 36px;
+    color:#7EB693;
+}
+
+.text-body-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 70px;
+    color:#274C5B;
+}
+
+.product-image {
+    width: 100%;
+    height: 325px;
+}
+
+.categories-cont {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.categories-title {
+    font-family: "Yellowtail", cursive;
+    color: #7EB693;
+}
+
+.our-products-title {
+    font-family: "Roboto", sans-serif;
+    color: #274C5B;
+}
+
+.categories {
+    margin-bottom: 40px;
+}
+
+.button-products {
+    width: 220px;
+    height: 79px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #274C5B;
+    border-radius: 16px;
+    margin: 0 auto;
+    margin-top: 120px;
+    border: none;
+}
+
+.arrow-right-categories {
+    size: 19px;
+}
+
+.more-categories-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.product-name {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color:#274C5B;
+}
+
+.product-info-cont {
+    border-top: #DEDDDD 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-prices {
+    display: flex;
+    gap:7px;
+    align-items: center;
+}
+
+.product-old-price {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: #B8B8B8;
+}
+
+.product-new-price {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #274C5B;
+    font-weight: 600;
+}
+
+.eco-friendly-cont {
+    display: flex;
+    position: relative;
+}
+
+.eco-friendly-image {
+    width: 50%;
+}
+
+.eco-friendly-title {
+    font-family: "Yellowtail", cursive;
+    font-size: 36px;
+    color: #7EB693;
+    font-weight: 300;
+}
+
+.eco-friendly-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    color: #274C5B;
+    font-weight: 800;
+}
+
+.cooperation-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    color: #274C5B;
+    font-weight: 800;
+}
+
+.cooperation-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #525C60;
+    font-weight: 500;
+}
+
+.cooperation-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.organic-cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 100px 0;
+    background-color: #F1F8F4;
+}
+
+.organic-info-cont {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.organic-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    color: #274C5B;
+    padding: 34px 84px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.organic-image {
+    width: 100%;
+}
+
+.organic-item {
+    position: relative;
+}
+
+.eco-friendly-info-cont {
+    width: 100%;
+    margin: 100px 0 100px -100px;
+    padding: 70px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.testination-cont {
+    background-image: url("./image//TestBack.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 165px 0;
+}
+
+.testination-info-cont {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonial-user-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.test-text {
+    padding: 0 165px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #525C60;
+}
+
+.testination-title {
+    font-family: "Yellowtail", cursive;
+    font-size: 36px;
+    color: #7EB693;
+    font-weight: 300;
+}
+
+.testination-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    color: #274C5B;
+    font-weight: 800;
+}
+
+.testimonial-user-cont {
+    margin-top: 60px;
+}
+
+.profile-name {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    color: #274C5B;
+    font-weight: 800;
+}
+
+.consumer {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: #525C60;
+    font-weight: 500;
+}
+
+.circles-cont {
+    border-top: #E0E0E0 1px solid;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 100px 20px 0 20px;
+}
+
+.circle {
+    border-radius: 100%;
+    border: #7EB693 4px solid;
+    width: 211px;
+    height: 211px;
+    display: flex;
+    flex-direction: column;
+}
+
+.circle-item {
+    background-color: #F1F1F1;
+    border-radius: 100%;
+    margin: 5px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.circle-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    color: #274C5B;
+    font-weight: 800;
+}
+
+.circle-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #274C5B;
+    font-weight: 600;
 }
